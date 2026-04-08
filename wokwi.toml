@@ -1,0 +1,8 @@
+[wokwi]
+version = 1
+firmware = "build/Driver Drowsiness.ino.elf"
+elf = "build/Driver Drowsiness.ino.elf"
+
+[[lib]]
+name = "WebSockets"
+version = "2.4.1"

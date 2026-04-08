@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "wifi": "Wokwi-GUEST",
+  "author": "KEERTHANA NAIR",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -28.8, "left": 4.84, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -7.2,
+      "left": -151.8,
+      "attrs": { "volume": "1.0" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "bz1:2", "esp:13", "green", [ "v57.6", "h124.4" ] ],
+    [ "bz1:1", "esp:GND.1", "green", [ "v48", "h134.4" ] ]
+  ],
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf"
+  },
+  "dependencies": {}
+}

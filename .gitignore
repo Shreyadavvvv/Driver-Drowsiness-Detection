@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pth
+
+# Node
+node_modules/
+
+# Build output
+build/
+
+# Arduino CLI
+arduino-cli.exe
+
+# Model (large file - optional, add if under 100MB)
+# student_float16.tflite
+
+# PlatformIO
+.pio/
+_platformio.ini
